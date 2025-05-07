@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven_3.8.7'  // Ensure Maven is available in Jenkins
-        jdk 'JDK_17'         // Ensure JDK 11 is available in Jenkins
+        maven 'Maven'  // Ensure Maven is available in Jenkins
+        jdk 'JDK'         // Ensure JDK 11 is available in Jenkins
     }
 
     environment {
@@ -15,7 +15,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Clone your Git repository
-                git 'https://github.com/vinayGowda173/mavenappguava.git'
+                git 'https://github.com/srivallabha01/maven-guava.git'
             }
         }
 
